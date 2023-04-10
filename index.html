@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Provider Calculator</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1 class="heading">Provider calculator</h1>
+        <div class="providers">
+          <div class="provider backblaze">
+            <span class="provider-name">Backblaze</span>
+            <img
+              class="logo"
+              src="./assets/img/logos/backblaze-logo.png"
+              alt="Backblaze Logo"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div class="provider bunny">
+            <span class="provider-name">Bunny</span>
+            <img
+              class="logo"
+              src="./assets/img/logos/bunny-logo.jpg"
+              alt="Bunny Logo"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div class="provider scaleway">
+            <span class="provider-name">Scaleway</span>
+            <img
+              class="logo"
+              src="./assets/img/logos/scaleway-logo.jpg"
+              alt="Scaleway Logo"
+              width="20"
+              height="20"
+            />
+          </div>
+          <div class="provider vultr">
+            <span class="provider-name">Vultr</span>
+            <img
+              class="logo"
+              src="./assets/img/logos/vultr-logo.jpg"
+              alt="Vultr Logo"
+              width="20"
+              height="20"
+            />
+          </div>
+        </div>
+        <form class="form">
+          <label class="option">
+            <div class="option-text">
+              <span>Storage:</span>
+              <span class="range-visual" id="storageVisual"></span>
+            </div>
+            <input
+              class="range"
+              id="storage"
+              name="storage"
+              type="range"
+              min="0"
+              max="1000"
+            />
+            <span class="start-value">0</span>
+            <span class="end-value">1000</span>
+          </label>
+          <label class="option">
+            <div class="option-text">
+              <span>Transfer:</span>
+              <span class="range-visual" id="transferVisual"></span>
+            </div>
+
+            <input
+              class="range"
+              id="transfer"
+              name="transfer"
+              type="range"
+              min="0"
+              max="1000"
+            />
+            <span class="start-value">0</span>
+            <span class="end-value">1000</span>
+          </label>
+        </form>
+      </div>
+    </main>
+    <script src="./js/helpers/defineOuterValues.js" type="module"></script>
+    <script src="./js/helpers/defineScreenWidth.js" type="module"></script>
+    <script src="./js/helpers/defineColor.js" type="module"></script>
+    <script src="./js/helpers/defineProviders.js" type="module"></script>
+    <script src="./js/classes/providerClasses.js" type="module"></script>
+    <script src="./js/index.js" type="module"></script>
+  </body>
+</html>
